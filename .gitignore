@@ -9,3 +9,4 @@ jupyter_execute
 /content/.auctex-auto/
 /content/code/*/solution/build*
 .*.sw? 
+mooc/img/

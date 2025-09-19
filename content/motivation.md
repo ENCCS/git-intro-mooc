@@ -1,5 +1,7 @@
 # Motivation
 
+<!-- start-motivation-1 -->
+
 :::{objectives}
 - Make sure nobody leaves the workshop without starting to use some form of version control.
 - Discuss the reasons why we advocate distributed version control.
@@ -134,6 +136,8 @@ Permalink that points to a code portion.
 - Configuration files
 - Website sources
 - Data
+
+<!-- end-motivation-1 -->
 
 ::::{discussion}
   In this example somebody tried to keep track of versions without a version

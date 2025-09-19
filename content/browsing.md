@@ -1,5 +1,7 @@
 # Copy and browse an existing project
 
+<!-- start-browsing-1 -->
+
 In this episode, we will look at an **existing repository** to
 understand how all the pieces work together. Along the way, we will make a copy
 (a {term}`fork`) of the {term}`repository` for us, which will be used for our
@@ -117,6 +119,7 @@ need to have forked the repository as described above.
 ::::
 :::::
 
+<!-- end-browsing-1 -->
 
 ## Exercise
 
