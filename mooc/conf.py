@@ -21,7 +21,7 @@ sys.path.insert(0, os.path.abspath("."))
 project = "Introduction to version control with Git: MOOC edition"
 copyright = "CodeRefinery contributors"
 author = "CodeRefinery contributors"
-github_user = "enccs"
+github_user = "coderefinery"
 github_repo_name = "git-intro-mooc"  # auto-detected from dirname if blank
 github_version = "mooc"
 conf_py_path = "/mooc/"  # with leading and trailing slash
@@ -99,12 +99,8 @@ import os
 if os.environ.get("GITHUB_REF", "") == f"refs/heads/{github_version}":
     html_js_files = [
         (
-            "https://plausible.io/js/script.js",
-            {
-                "data-domain": "enccs.github.io/git-intro-mooc",
-                "defer": "\
-defer",
-            },
+            "https://plausible.cs.aalto.fi/js/script.js",
+            {"data-domain": "coderefinery.github.io", "defer": "defer"},
         ),
     ]
 
