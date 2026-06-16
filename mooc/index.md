@@ -58,8 +58,9 @@ configuration
 
 browsing-1
 browsing-2
+commits-1
+commits-2
 ```
-<!-- commits -->
 <!-- merging -->
 <!-- local-workflow -->
 
