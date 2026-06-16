@@ -1,0 +1,183 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recording changes [1] &mdash; Introduction to version control with Git: MOOC edition  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=949a1ff5" />
+      <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_lesson.css?v=e9df6548" />
+      <link rel="stylesheet" type="text/css" href="../_static/term_role_formatting.css?v=4194e21c" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_rtd_theme_ext_color_contrast.css?v=8e8ea19f" />
+
+  
+    <link rel="shortcut icon" href="../_static/coderefinery.ico"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=187304be"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=582ca9e2"></script>
+      <script src="../_static/minipres.js?v=a0d29692"></script>
+      <script>let toggleHintShow = 'Click to show';</script>
+      <script>let toggleHintHide = 'Click to hide';</script>
+      <script>let toggleOpenOnPrint = 'true';</script>
+      <script src="../_static/togglebutton.js?v=b8b12719"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+    <link rel="next" title="Recording changes [2]" href="../commits-2/" />
+    <link rel="prev" title="Copy and browsing an existing project [2]" href="../browsing-2/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../" class="icon icon-home">
+            Introduction to version control with Git: MOOC edition
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../motivation-1/">Motivation [1]</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../motivation-2/">Motivation [2]</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuration/">Configuring Git command line and editor</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Modifying an existing project</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../browsing-1/">Copy and browse an existing project [1]</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../browsing-2/">Copy and browsing an existing project [2]</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Recording changes [1]</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#background">Background</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../commits-2/">Recording changes [2]</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../merging-1/">Merging changes and contributing to the project [1]</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../merging-2/">Merging changes and contributing to the project [2]</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../local-workflow-1/">Cloning a Git repository and working locally [1]</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../local-workflow-2/">Cloning a Git repository and working locally [2]</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://coderefinery.org/lessons/core/">All lessons</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://coderefinery.org/">CodeRefinery</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://coderefinery.org/lessons/reusing/">Reusing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">Introduction to version control with Git: MOOC edition</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Recording changes [1]</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/coderefinery/git-intro-mooc/blob/mooc/mooc/commits-1.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="recording-changes-1">
+<h1>Recording changes [1]<a class="headerlink" href="#recording-changes-1" title="Link to this heading"></a></h1>
+<p>The first and most basic task to do in Git is <strong>record changes</strong> using
+commits. In this part, we will record changes in two
+ways: on a new branch (which supports multiple lines of work at once), and directly
+on the “main” branch (which happens to be the default branch here).</p>
+<div class="admonition-objectives objectives admonition" id="objectives-0">
+<p class="admonition-title">Objectives</p>
+<ul class="simple">
+<li><p>Record new changes to our own copy of the project.</p></li>
+<li><p>Understand adding changes in two separate branches.</p></li>
+<li><p>See how to compare different versions.</p></li>
+</ul>
+</div>
+<section id="background">
+<h2>Background<a class="headerlink" href="#background" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>In the previous episode we have browsed an existing <span class="xref std std-term">repository</span> and saw <span class="xref std std-term">commits</span>
+and branches.</p></li>
+<li><p>Each commit is a snapshot of the entire project at a certain
+point in time and has a unique identifier (<span class="xref std std-term">hash</span>) .</p></li>
+<li><p>A <span class="xref std std-term">branch</span> is a line of development, and the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch or <code class="docutils literal notranslate"><span class="pre">master</span></code> branch
+are often the default branch in Git.</p></li>
+<li><p>A branch in Git is like a sticky note that is attached to a commit. When we add
+new commits to a branch, the sticky note moves to the new commit.</p></li>
+<li><p><span class="xref std std-term">Tags</span> are a way to mark a specific commit as important, for example a release
+version. They are also like a sticky note, but they don’t move when new
+commits are added.</p></li>
+</ul>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../_images/gophers.png"><img alt="Branching explained with a gopher" src="../_images/gophers.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">What if two people, at the same time, make two different changes?  Git
+can merge them together easily.  Image created using <a class="reference external" href="https://gopherize.me/">https://gopherize.me/</a>
+(<a class="reference external" href="https://twitter.com/jay_gee/status/703360688618536960">inspiration</a>).</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../browsing-2/" class="btn btn-neutral float-left" title="Copy and browsing an existing project [2]" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../commits-2/" class="btn btn-neutral float-right" title="Recording changes [2]" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright CodeRefinery contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
