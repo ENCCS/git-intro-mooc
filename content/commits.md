@@ -1,5 +1,7 @@
 # Recording changes
 
+<!-- start-commits-1 -->
+
 The first and most basic task to do in Git is **record changes** using
 commits. In this part, we will record changes in two
 ways: on a new branch (which supports multiple lines of work at once), and directly
@@ -35,6 +37,7 @@ can merge them together easily.  Image created using <https://gopherize.me/>
 ([inspiration](https://twitter.com/jay_gee/status/703360688618536960)).
 :::
 
+<!-- end-commits-1 -->
 
 ## Exercise
 

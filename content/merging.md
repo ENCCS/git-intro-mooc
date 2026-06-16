@@ -1,5 +1,7 @@
 # Merging changes and contributing to the project
 
+<!-- start-merging-1 -->
+
 Git allows us to have different development lines where we can try things out.
 It also allows different people to work on the same project at the same.  This
 means that we have to somehow combine the changes later. In this part we will
@@ -27,6 +29,7 @@ practice this: {term}`merging`.
 * We will find it's not that hard!  But you do have to keep track of the
   steps and make sure that you are careful about where a change is added.
 
+<!-- end-merging-1 -->
 
 ## Exercise
 

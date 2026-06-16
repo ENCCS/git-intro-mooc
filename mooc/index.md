@@ -58,10 +58,13 @@ configuration
 
 browsing-1
 browsing-2
+commits-1
+commits-2
+merging-1
+merging-2
+local-workflow-1
+local-workflow-2
 ```
-<!-- commits -->
-<!-- merging -->
-<!-- local-workflow -->
 
 <!-- ```{toctree} -->
 <!-- :maxdepth: 1 -->

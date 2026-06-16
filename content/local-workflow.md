@@ -1,5 +1,7 @@
 # Cloning a Git repository and working locally
 
+<!-- start-local-workflow-1 -->
+
 If you've been following the main path, you have just had interacted
 with repositories on GitHub. This might not be what you usually
 do, so now we move to working on your own computer.
@@ -43,6 +45,7 @@ Illustration of cloning a repository to a local computer.
   we cloned from. We have to actively "push" them there (we will practice this
   in a later episode: {ref}`sharing-repositories`).
 
+<!-- end-local-workflow-1 -->
 
 ## Exercise
 
