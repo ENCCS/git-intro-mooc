@@ -60,8 +60,9 @@ browsing-1
 browsing-2
 commits-1
 commits-2
+merging-1
+merging-2
 ```
-<!-- merging -->
 <!-- local-workflow -->
 
 <!-- ```{toctree} -->
